@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Score Keeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Score Keeper</h1>
+  <p>Joueur 1 : <span id="score1">0</span></p>
+  <p>Joueur 2 : <span id="score2">0</span></p>
+
+  <label>Score max :
+    <select id="scoreMax">
+      <option value="3">3</option>
+      <option value="5" selected>5</option>
+      <option value="10">10</option>
+    </select>
+  </label>
+
+  <div class="score-btns">
+    <button id="btn1">Player 1</button>
+    <button id="btn2">Player 2</button>
+    <button id="reset">Reset</button>
+  </div>
+
+  <script src="score.js"></script>
+</body>
+</html>

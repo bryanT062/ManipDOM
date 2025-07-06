@@ -46,21 +46,4 @@ const app = document.getElementById("div");
 
 
 
-app.innerHTML = `
-<div style=" align-items: center; gap: 20px;">
-  <input type="text" id="input" placeholder="Votre produit" textalign:center;>
-  <button id="add">Ajouter</button>
-  <ul id="list"></ul>
-</div>
-`;
 
-const add = document.getElementById("add");
-
-add.addEventListener("click", function() {
-  const input = document.getElementById("input");
-  const list = document.getElementById("list");
-  const li = document.createElement("li");
-  li.textContent = input.value;
-  list.appendChild(li);
-  input.value = "";
-});
